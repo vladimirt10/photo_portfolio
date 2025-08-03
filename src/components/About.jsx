@@ -19,7 +19,7 @@ export const About = () => {
           <RevealOnScroll>
             <div>
               <h3 className="text-2xl font-bold text-white mb-6">
-                Hello! I'm Mrs. M, a passionate photographer.
+                Hello! I'm Ms. M, a passionate photographer.
               </h3>
               <div className="space-y-4 text-gray-400">
                 <p>

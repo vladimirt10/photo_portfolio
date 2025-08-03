@@ -8,7 +8,6 @@ export const Navbar = () => {
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About' },
     { href: '#portfolio', label: 'Portfolio' },
-    { href: '#services', label: 'Services' },
     { href: '#contact', label: 'Contact' }
   ];
 
@@ -20,7 +19,7 @@ export const Navbar = () => {
             {/* Logo */}
             <div className="flex-shrink-0">
               <a href="#home" className="text-xl font-bold text-white">
-                Mrs M<span className="text-blue-500">.</span>
+                Ms M<span className="text-blue-500">.</span>
               </a>
             </div>
 
