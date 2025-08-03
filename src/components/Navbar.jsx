@@ -20,7 +20,7 @@ export const Navbar = () => {
             {/* Logo */}
             <div className="flex-shrink-0">
               <a href="#home" className="text-xl font-bold text-white">
-                Matar<span className="text-blue-500">.</span>
+                Mrs M<span className="text-blue-500">.</span>
               </a>
             </div>
 

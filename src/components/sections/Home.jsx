@@ -18,6 +18,13 @@ export const Home = () => {
             revealing the extraordinary in everyday scenes and celebrating the light 
             that exists in every frame.
           </p>
+          <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto text-right" dir="rtl">
+            אני צלמת נלהבת שמוצאת השראה ברגעים השקטים של הטבע
+            וביופיו האותנטי של הקשר האנושי.
+            דרך העדשה שלי, אני תופסת את רוח האופטימיות של עולמנו,
+            חושפת את המיוחד שבסצנות היומיומיות וחוגגת את האור
+            הקיים בכל פריים.
+          </p>
           <div className="flex justify-center space-x-4">
             <a
               href="#projects"

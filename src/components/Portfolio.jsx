@@ -8,7 +8,7 @@ export const Portfolio = () => {
       description: "A full-stack e-commerce solution with React, Node.js, and PostgreSQL",
       technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
       image: "/images/portfolio/project1.jpg",
-      githubUrl: "https://github.com/mrsm/ecommerce",
+      githubUrl: "https://github.com/",
       liveUrl: "https://ecommerce-demo.com"
     },
     {
@@ -17,7 +17,7 @@ export const Portfolio = () => {
       description: "A collaborative task management application with real-time updates",
       technologies: ["Vue.js", "Socket.io", "MongoDB", "Express"],
       image: "/images/portfolio/project2.jpg",
-      githubUrl: "https://github.com/mrsm/taskmanager",
+      githubUrl: "https://github.com/",
       liveUrl: "https://taskmanager-demo.com"
     },
     {
@@ -26,7 +26,7 @@ export const Portfolio = () => {
       description: "Real-time weather tracking with beautiful visualizations",
       technologies: ["React", "TypeScript", "Chart.js", "OpenWeather API"],
       image: "/images/portfolio/project3.jpg",
-      githubUrl: "https://github.com/mrsm/weather-dashboard",
+      githubUrl: "https://github.com/",
       liveUrl: "https://weather-dashboard-demo.com"
     },
     {
@@ -35,7 +35,7 @@ export const Portfolio = () => {
       description: "Analytics dashboard for social media performance tracking",
       technologies: ["Next.js", "Python", "Django", "D3.js"],
       image: "/images/portfolio/project4.jpg",
-      githubUrl: "https://github.com/mrsm/social-analytics",
+      githubUrl: "https://github.com/",
       liveUrl: "https://social-analytics-demo.com"
     },
     {
@@ -44,7 +44,7 @@ export const Portfolio = () => {
       description: "Real-time cryptocurrency price tracking and portfolio management",
       technologies: ["React", "Redux", "CoinGecko API", "Firebase"],
       image: "/images/portfolio/project5.jpg",
-      githubUrl: "https://github.com/mrsm/crypto-tracker",
+      githubUrl: "https://github.com/",
       liveUrl: "https://crypto-tracker-demo.com"
     },
     {
@@ -53,7 +53,7 @@ export const Portfolio = () => {
       description: "Community-driven recipe sharing platform with user ratings",
       technologies: ["React Native", "Node.js", "MongoDB", "Cloudinary"],
       image: "/images/portfolio/project6.jpg",
-      githubUrl: "https://github.com/mrsm/recipe-app",
+      githubUrl: "https://github.com/",
       liveUrl: "https://recipe-app-demo.com"
     }
   ];
@@ -130,7 +130,7 @@ export const Portfolio = () => {
         <RevealOnScroll>
           <div className="text-center mt-12">
             <a
-              href="https://github.com/mrsM"
+              href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-lg transition-colors duration-200"
