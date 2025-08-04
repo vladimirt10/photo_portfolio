@@ -2,15 +2,15 @@ import { RevealOnScroll } from './RevealOnScroll';
 
 export const About = () => {
   return (
-    <section id="about" className="py-20 bg-gray-900">
+    <section id="about" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <RevealOnScroll>
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
-              About Me
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent" dir="rtl">
+              אודותיי
             </h2>
-            <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-              Passionate developer with a love for creating innovative solutions
+            <p className="text-gray-600 text-lg max-w-3xl mx-auto text-right" dir="rtl">
+              צלמת נלהבת עם אהבה ליצירת פתרונות חדשניים ומעוררי השראה
             </p>
           </div>
         </RevealOnScroll>
@@ -18,22 +18,22 @@ export const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <RevealOnScroll>
             <div>
-              <h3 className="text-2xl font-bold text-white mb-6">
-                Hello! I'm Ms. M, a passionate photographer.
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-right" dir="rtl">
+                שלום! אני מטר וינברג
               </h3>
-              <div className="space-y-4 text-gray-400">
+              <div className="space-y-4 text-gray-600 text-right" dir="rtl">
                 <p>
-                  I'm a passionate full-stack developer with expertise in modern web technologies. 
-                  I love building scalable applications that solve real-world problems and provide 
-                  exceptional user experiences.
+                  אני צלמת נלהבת עם מומחיות בטכנולוגיות צילום מודרניות.
+                  אני אוהבת ליצור יצירות מעוררות השראה הפותרות אתגרים אמנותיים אמיתיים ומספקות
+                  חוויות חזותיות יוצאות דופן.
                 </p>
                 <p>
-                  My journey in development started with curiosity about how things work, and has 
-                  evolved into a career focused on creating clean, efficient, and maintainable code.
+                  המסע שלי בצילום התחיל בסקרנות לגבי איך אור ותנועה פועלים, והתפתח
+                  לקריירה המתמקדת ביצירת תמונות נקיות, יעילות ובעלות משמעות.
                 </p>
                 <p>
-                  When I'm not coding, you can find me exploring new technologies, contributing to 
-                  open-source projects, or sharing knowledge with the developer community.
+                  כשאני לא מצלמת, אפשר למצוא אותי חוקרת טכניקות צילום חדשות, תורמת לפרויקטים
+                  קהילתיים, או חולקת ידע עם קהילת הצלמים.
                 </p>
               </div>
             </div>
@@ -41,21 +41,21 @@ export const About = () => {
 
           <RevealOnScroll>
             <div className="grid grid-cols-2 gap-6">
-              <div className="bg-gray-800 p-6 rounded-lg text-center">
+              <div className="bg-gray-100 p-6 rounded-lg text-center">
                 <div className="text-3xl font-bold text-blue-500 mb-2">3+</div>
-                <div className="text-gray-400">Years Experience</div>
+                <div className="text-gray-600" dir="rtl">שנות ניסיון</div>
               </div>
-              <div className="bg-gray-800 p-6 rounded-lg text-center">
+              <div className="bg-gray-100 p-6 rounded-lg text-center">
                 <div className="text-3xl font-bold text-blue-500 mb-2">50+</div>
-                <div className="text-gray-400">Projects Completed</div>
+                <div className="text-gray-600" dir="rtl">פרויקטים הושלמו</div>
               </div>
-              <div className="bg-gray-800 p-6 rounded-lg text-center">
+              <div className="bg-gray-100 p-6 rounded-lg text-center">
                 <div className="text-3xl font-bold text-blue-500 mb-2">20+</div>
-                <div className="text-gray-400">Happy Clients</div>
+                <div className="text-gray-600" dir="rtl">לקוחות מרוצים</div>
               </div>
-              <div className="bg-gray-800 p-6 rounded-lg text-center">
+              <div className="bg-gray-100 p-6 rounded-lg text-center">
                 <div className="text-3xl font-bold text-blue-500 mb-2">100%</div>
-                <div className="text-gray-400">Satisfaction</div>
+                <div className="text-gray-600" dir="rtl">שביעות רצון</div>
               </div>
             </div>
           </RevealOnScroll>
@@ -63,17 +63,17 @@ export const About = () => {
 
         <RevealOnScroll>
           <div className="mt-16">
-            <h3 className="text-2xl font-bold text-white mb-8 text-center">
-              Technologies I Work With
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center" dir="rtl">
+              הטכנולוגיות איתן אני עובדת
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
               {[
-                'React', 'TypeScript', 'Node.js', 'Python', 'Next.js', 'Vue.js',
-                'PostgreSQL', 'MongoDB', 'AWS', 'Docker', 'Git', 'Tailwind CSS'
+                'צילום דיגיטלי', 'עריכת תמונות', 'Adobe Lightroom', 'Adobe Photoshop', 'צילום סטודיו', 'צילום טבע',
+                'צילום פורטרטים', 'צילום אירועים', 'צילום נוף', 'צילום רחוב', 'צילום מקרו', 'עיצוב גרפי'
               ].map((tech) => (
                 <div
                   key={tech}
-                  className="bg-gray-800 p-4 rounded-lg text-center text-gray-300 hover:text-white hover:bg-gray-700 transition-all duration-200"
+                  className="bg-gray-100 p-4 rounded-lg text-center text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-all duration-200"
                 >
                   {tech}
                 </div>

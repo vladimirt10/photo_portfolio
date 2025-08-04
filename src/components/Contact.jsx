@@ -30,7 +30,7 @@ export const Contact = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg>
       ),
-      label: "Email",
+      label: "אימייל",
       value: "msm@example.com",
       href: "mailto:msm@example.com"
     },
@@ -40,9 +40,9 @@ export const Contact = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
         </svg>
       ),
-      label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      label: "טלפון",
+      value: "050-123-4567",
+      href: "tel:+972501234567"
     },
     {
       icon: (
@@ -51,8 +51,8 @@ export const Contact = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
         </svg>
       ),
-      label: "Location",
-      value: "Tel Aviv, Israel",
+      label: "מיקום",
+      value: "תל אביב, ישראל",
       href: null
     }
   ];
@@ -80,15 +80,15 @@ export const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-black">
+    <section id="contact" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <RevealOnScroll>
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
-              Get In Touch
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent" dir="rtl">
+              בואו ניצור קשר
             </h2>
-            <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-              Let's discuss your project and bring your ideas to life. I'm always excited to work on new challenges.
+            <p className="text-gray-600 text-lg max-w-3xl mx-auto text-right" dir="rtl">
+              בואו נדבר על הפרויקט שלכם ונביא את הרעיונות שלכם לחיים. אני תמיד נרגשת לעבוד על אתגרים חדשים.
             </p>
           </div>
         </RevealOnScroll>
@@ -97,7 +97,7 @@ export const Contact = () => {
           {/* Contact Information */}
           <RevealOnScroll>
             <div>
-              <h3 className="text-2xl font-bold text-white mb-8">Let's Connect</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-8 text-right" dir="rtl">בואו נתחבר</h3>
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-center space-x-4">
@@ -105,16 +105,16 @@ export const Contact = () => {
                       {info.icon}
                     </div>
                     <div>
-                      <div className="text-gray-400 text-sm">{info.label}</div>
+                      <div className="text-gray-600 text-sm">{info.label}</div>
                       {info.href ? (
                         <a
                           href={info.href}
-                          className="text-white hover:text-blue-400 transition-colors"
+                          className="text-gray-900 hover:text-blue-600 transition-colors"
                         >
                           {info.value}
                         </a>
                       ) : (
-                        <div className="text-white">{info.value}</div>
+                        <div className="text-gray-900">{info.value}</div>
                       )}
                     </div>
                   </div>
@@ -123,7 +123,7 @@ export const Contact = () => {
 
               {/* Social Links */}
               <div className="mt-12">
-                <h4 className="text-lg font-semibold text-white mb-4">Follow Me</h4>
+                <h4 className="text-lg font-semibold text-gray-900 mb-4 text-right" dir="rtl">עקבו אחריי</h4>
                 <div className="flex space-x-4">
                   {socialLinks.map((social) => (
                     <a
@@ -131,7 +131,7 @@ export const Contact = () => {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-blue-500 transition-colors p-2 hover:bg-gray-800 rounded-lg"
+                      className="text-gray-600 hover:text-blue-500 transition-colors p-2 hover:bg-gray-100 rounded-lg"
                       aria-label={social.name}
                     >
                       {social.icon}
@@ -144,13 +144,13 @@ export const Contact = () => {
 
           {/* Contact Form */}
           <RevealOnScroll>
-            <div className="bg-gray-900 rounded-lg p-8 border border-gray-800">
-              <h3 className="text-2xl font-bold text-white mb-6">Send a Message</h3>
+            <div className="bg-gray-100 rounded-lg p-8 border border-gray-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-right" dir="rtl">שליחת הודעה</h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-                      Name
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2 text-right" dir="rtl">
+                      שם
                     </label>
                     <input
                       type="text"
@@ -159,13 +159,14 @@ export const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 transition-colors"
-                      placeholder="Your Name"
+                      className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 transition-colors text-right"
+                      placeholder="השם שלך"
+                      dir="rtl"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-                      Email
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2 text-right" dir="rtl">
+                      אימייל
                     </label>
                     <input
                       type="email"
@@ -174,14 +175,14 @@ export const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 transition-colors"
+                      className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 transition-colors"
                       placeholder="your@email.com"
                     />
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
-                    Subject
+                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2 text-right" dir="rtl">
+                    נושא
                   </label>
                   <input
                     type="text"
@@ -190,13 +191,14 @@ export const Contact = () => {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 transition-colors"
-                    placeholder="Project Subject"
+                    className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 transition-colors text-right"
+                    placeholder="נושא הפרויקט"
+                    dir="rtl"
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-                    Message
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2 text-right" dir="rtl">
+                    הודעה
                   </label>
                   <textarea
                     id="message"
@@ -205,15 +207,17 @@ export const Contact = () => {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 transition-colors resize-none"
-                    placeholder="Tell me about your project..."
+                    className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 transition-colors resize-none text-right"
+                    placeholder="ספרו לי על הפרויקט שלכם..."
+                    dir="rtl"
                   />
                 </div>
                 <button
                   type="submit"
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-medium transition-colors duration-200 flex items-center justify-center space-x-2"
+                  dir="rtl"
                 >
-                  <span>Send Message</span>
+                  <span>שלח הודעה</span>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                   </svg>

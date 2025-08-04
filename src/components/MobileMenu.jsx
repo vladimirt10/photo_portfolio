@@ -10,7 +10,7 @@ export const MobileMenu = ({ isOpen, onClose, navItems }) => {
       />
       
       {/* Menu */}
-      <div className={`fixed top-16 left-0 right-0 bg-black/95 backdrop-blur-sm border-b border-gray-800 transform transition-transform duration-300 ${
+      <div className={`fixed top-16 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 transform transition-transform duration-300 ${
         isOpen ? 'translate-y-0' : '-translate-y-full'
       }`}>
         <div className="px-2 pt-2 pb-3 space-y-1">
@@ -19,7 +19,7 @@ export const MobileMenu = ({ isOpen, onClose, navItems }) => {
               key={item.href}
               href={item.href}
               onClick={onClose}
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 transition-colors duration-200"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition-colors duration-200"
             >
               {item.label}
             </a>

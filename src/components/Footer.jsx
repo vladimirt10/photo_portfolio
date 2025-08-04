@@ -25,27 +25,27 @@ export const Footer = () => {
   ];
 
   const quickLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Portfolio", href: "#portfolio" },
-    { name: "Contact", href: "#contact" }
+    { name: "בית", href: "#home" },
+    { name: "אודות", href: "#about" },
+    { name: "תיק עבודות", href: "#portfolio" },
+    { name: "צור קשר", href: "#contact" }
   ];
 
   return (
-    <footer className="bg-gray-900 border-t border-gray-800">
+    <footer className="bg-white border-t border-gray-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <RevealOnScroll>
           <div className="py-12 grid md:grid-cols-4 gap-8">
             {/* Brand Section */}
             <div className="md:col-span-2">
               <div className="mb-4">
-                <a href="#home" className="text-2xl font-bold text-white">
-                  Ms M<span className="text-blue-500">.</span>
+                <a href="#home" className="text-2xl font-bold text-gray-900">
+                  MW Photography<span className="text-blue-500"></span>
                 </a>
               </div>
-              <p className="text-gray-400 mb-6 max-w-md">
-                Full-stack developer passionate about creating innovative web solutions 
-                that deliver exceptional user experiences and solve real-world problems.
+              <p className="text-gray-600 mb-6 max-w-md text-right" dir="rtl">
+                צלמת מקצועית נלהבת ליצירת פתרונות חזותיים חדשניים 
+                המספקים חוויות יוצאות דופן ופותרים אתגרים אמנותיים אמיתיים.
               </p>
               <div className="flex space-x-4">
                 {socialLinks.map((social) => (
@@ -54,7 +54,7 @@ export const Footer = () => {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-blue-500 transition-colors p-2 hover:bg-gray-800 rounded-lg"
+                    className="text-gray-600 hover:text-blue-500 transition-colors p-2 hover:bg-gray-100 rounded-lg"
                     aria-label={social.name}
                   >
                     {social.icon}
@@ -65,13 +65,13 @@ export const Footer = () => {
 
             {/* Quick Links */}
             <div>
-              <h3 className="text-white font-semibold mb-4">Quick Links</h3>
+              <h3 className="text-gray-900 font-semibold mb-4 text-right" dir="rtl">קישורים מהירים</h3>
               <ul className="space-y-2">
                 {quickLinks.map((link) => (
                   <li key={link.name}>
                     <a
                       href={link.href}
-                      className="text-gray-400 hover:text-white transition-colors"
+                      className="text-gray-600 hover:text-gray-900 transition-colors"
                     >
                       {link.name}
                     </a>
@@ -82,22 +82,22 @@ export const Footer = () => {
 
             {/* Contact Info */}
             <div>
-              <h3 className="text-white font-semibold mb-4">Get in Touch</h3>
-              <div className="space-y-2 text-gray-400">
-                <div className="flex items-center space-x-2">
+              <h3 className="text-gray-900 font-semibold mb-4 text-right" dir="rtl">יצירת קשר</h3>
+              <div className="space-y-2 text-gray-600 text-right" dir="rtl">
+                <div className="flex items-center space-x-2 flex-row-reverse space-x-reverse">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  <a href="mailto:msm@example.com" className="hover:text-white transition-colors">
+                  <a href="mailto:msm@example.com" className="hover:text-gray-900 transition-colors">
                     msm@example.com
                   </a>
                 </div>
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-2 flex-row-reverse space-x-reverse">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  <span>Tel Aviv, Israel</span>
+                  <span>תל אביב, ישראל</span>
                 </div>
               </div>
             </div>
@@ -106,16 +106,16 @@ export const Footer = () => {
 
         {/* Bottom Section */}
         <RevealOnScroll>
-          <div className="py-6 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
-            <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © {currentYear} Ms M. All rights reserved.
+          <div className="py-6 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
+            <div className="text-gray-600 text-sm mb-4 md:mb-0" dir="rtl">
+              © {currentYear} מ.ו. כל הזכויות שמורות.
             </div>
-            <div className="flex space-x-6 text-sm text-gray-400">
-              <a href="#" className="hover:text-white transition-colors">
-                Privacy Policy
+            <div className="flex space-x-6 text-sm text-gray-600" dir="rtl">
+              <a href="#" className="hover:text-gray-900 transition-colors">
+                מדיניות פרטיות
               </a>
-              <a href="#" className="hover:text-white transition-colors">
-                Terms of Service
+              <a href="#" className="hover:text-gray-900 transition-colors">
+                תנאי שירות
               </a>
             </div>
           </div>

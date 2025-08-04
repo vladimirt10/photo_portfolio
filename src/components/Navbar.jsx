@@ -1,25 +1,30 @@
 import { useState } from 'react';
 import { MobileMenu } from './MobileMenu';
+import mwPhoto from '../assets/mw_photo.png';
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { href: '#home', label: 'Home' },
-    { href: '#about', label: 'About' },
-    { href: '#portfolio', label: 'Portfolio' },
-    { href: '#contact', label: 'Contact' }
+    { href: '#home', label: 'בית' },
+    { href: '#about', label: 'אודות' },
+    { href: '#portfolio', label: 'תיק עבודות' },
+    { href: '#contact', label: 'צור קשר' }
   ];
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-40 bg-black/90 backdrop-blur-sm border-b border-gray-800">
+      <nav className="fixed top-0 left-0 right-0 z-40 bg-white/90 backdrop-blur-sm border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <a href="#home" className="text-xl font-bold text-white">
-                Ms M<span className="text-blue-500">.</span>
+              <a href="#home" className="flex items-center">
+                <img 
+                  src={mwPhoto} 
+                  alt="MW Photography" 
+                  className="h-10 w-auto"
+                />
               </a>
             </div>
 
@@ -30,7 +35,7 @@ export const Navbar = () => {
                   <a
                     key={item.href}
                     href={item.href}
-                    className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+                    className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
                   >
                     {item.label}
                   </a>
@@ -42,7 +47,7 @@ export const Navbar = () => {
             <div className="md:hidden">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="text-gray-400 hover:text-white focus:outline-none focus:text-white"
+                className="text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900"
               >
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   {isMobileMenuOpen ? (
