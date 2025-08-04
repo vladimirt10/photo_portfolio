@@ -23,7 +23,7 @@ export const About = () => {
               </h3>
               <div className="space-y-4 text-gray-600 text-right" dir="rtl">
                 <p>
-                  אני צלמת נלהבת עם מומחיות בטכנולוגיות צילום מודרניות.
+                  אני צלמת נלהבת עם מומחיות ב...
                   אני אוהבת ליצור יצירות מעוררות השראה הפותרות אתגרים אמנותיים אמיתיים ומספקות
                   חוויות חזותיות יוצאות דופן.
                 </p>
@@ -33,7 +33,7 @@ export const About = () => {
                 </p>
                 <p>
                   כשאני לא מצלמת, אפשר למצוא אותי חוקרת טכניקות צילום חדשות, תורמת לפרויקטים
-                  קהילתיים, או חולקת ידע עם קהילת הצלמים.
+                  קהילתיים, או...
                 </p>
               </div>
             </div>
@@ -42,15 +42,15 @@ export const About = () => {
           <RevealOnScroll>
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-gray-100 p-6 rounded-lg text-center">
-                <div className="text-3xl font-bold text-blue-500 mb-2">3+</div>
+                <div className="text-3xl font-bold text-blue-500 mb-2">X+</div>
                 <div className="text-gray-600" dir="rtl">שנות ניסיון</div>
               </div>
               <div className="bg-gray-100 p-6 rounded-lg text-center">
-                <div className="text-3xl font-bold text-blue-500 mb-2">50+</div>
+                <div className="text-3xl font-bold text-blue-500 mb-2">X+</div>
                 <div className="text-gray-600" dir="rtl">פרויקטים הושלמו</div>
               </div>
               <div className="bg-gray-100 p-6 rounded-lg text-center">
-                <div className="text-3xl font-bold text-blue-500 mb-2">20+</div>
+                <div className="text-3xl font-bold text-blue-500 mb-2">X+</div>
                 <div className="text-gray-600" dir="rtl">לקוחות מרוצים</div>
               </div>
               <div className="bg-gray-100 p-6 rounded-lg text-center">

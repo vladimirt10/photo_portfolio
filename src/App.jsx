@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react';
-import { LoadingScreen } from './components/LoadingScreen';
+import { useEffect } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { OilColorsTransition } from './components/OilColorsTransition';
@@ -9,12 +8,6 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  const handleLoadingComplete = () => {
-    setIsLoading(false);
-  };
-
   useEffect(() => {
     // Smooth scrolling for anchor links
     const handleClick = (e) => {
@@ -35,10 +28,6 @@ function App() {
     document.addEventListener('click', handleClick);
     return () => document.removeEventListener('click', handleClick);
   }, []);
-
-  if (isLoading) {
-    return <LoadingScreen onComplete={handleLoadingComplete} />;
-  }
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
