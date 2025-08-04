@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { LoadingScreen } from './components/LoadingScreen';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
+import { OilColorsTransition } from './components/OilColorsTransition';
 import { About } from './components/About';
 import { Portfolio } from './components/Portfolio';
 import { Contact } from './components/Contact';
@@ -44,6 +45,7 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <OilColorsTransition />
         <About />
         <Portfolio />
         <Contact />

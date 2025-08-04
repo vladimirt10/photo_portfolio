@@ -1,22 +1,8 @@
 import { RevealOnScroll } from './RevealOnScroll';
-import oilColorsImg from '../assets/oil_colors.jpg';
 
 export const About = () => {
   return (
-    <section 
-      id="about" 
-      className="py-20 relative bg-reveal"
-      style={{
-        backgroundImage: `url(${oilColorsImg})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: window.innerWidth > 768 ? 'fixed' : 'scroll',
-        backgroundRepeat: 'no-repeat',
-        minHeight: '100vh'
-      }}
-    >
-      {/* Enhanced overlay for better text readability */}
-      <div className="absolute inset-0 overlay-gradient"></div>
+    <section id="about" className="py-20 bg-gray-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <RevealOnScroll>
           <div className="text-center mb-16">
