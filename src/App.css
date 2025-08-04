@@ -79,3 +79,58 @@ body {
 .loading-screen {
   font-family: 'Courier New', monospace;
 }
+
+/* About section background transition */
+#about {
+  transition: background-position 0.3s ease-out;
+}
+
+/* Parallax effect for the oil colors background */
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Smooth reveal animation for background */
+@keyframes fadeInBackground {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.bg-reveal {
+  animation: fadeInBackground 1s ease-out;
+}
+
+/* Enhanced overlay for better text readability */
+.overlay-gradient {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.6) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+/* Oil colors background */
+.oil-colors-bg {
+  background-image: url('/photo_portfolio/oil_colors.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Fallback for mobile devices where fixed attachment might not work */
+@media (max-width: 768px) {
+  .oil-colors-bg {
+    background-attachment: scroll;
+  }
+}
